@@ -1,5 +1,6 @@
 
-# Pilotage d'équipement via modBus
+# Pilotage d'équipement via Modbus
+
 projet raspberry pour le pilotage d'équipement Modbus
 
 ## Installation
@@ -62,5 +63,22 @@ On doit obtenir le résultat suivant
     urllib3==1.26.5
     v4l2-python3==0.3.2
     zope.interface==6.0
+
+### Ip statique
+
+Editer le fichier suivant 
+
+    sudo nano /etc/dhcpcd.conf
+Rempacer les lignes suivantes 
+
+    interface  eth0  
+    static ip_address=192.168.1.100/24  
+    static routers=192.168.1.1  
+    static domain_name_servers=192.168.1.1
+Assurez-vous d'utiliser les valeurs appropriées pour votre réseau.
+Redémarrez votre Raspberry Pi pour que les nouvelles configurations prennent effet :
+
+    sudo reboot
+
 
 
