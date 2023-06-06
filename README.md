@@ -1,5 +1,5 @@
 
-# modbus-raspberry
+# Pilotage d'équipement via modBus
 projet raspberry pour le pilotage d'équipement Modbus
 
 ## Installation
